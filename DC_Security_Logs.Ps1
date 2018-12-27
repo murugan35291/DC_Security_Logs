@@ -31,10 +31,10 @@ Date   : 20/April/2018
 
 $Logdate=Get-Date -Format ddMMyyyy-hh-mm    # for Logfilename
 $CurrentDate= Get-date -Format dd-MMM-yyyy  # folder creation purpose
-#$remoteServer="APEDSPDDC011"
+#$remoteServer="Server1"
 
 
-#$DCsList = "APEDC12WDF002,APEDC12WDF001,APEDC12DDC004"
+#$DCsList = "Server002,server001,Server004"
 #$DCsListing=$DCsList.Split(",")
 
 foreach ($DomainCntrl in (Get-content $DCsListing))
